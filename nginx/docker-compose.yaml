@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  nginx:
+    image: nginx
+    tty: true
+    ports:
+      - '80:80'
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ./conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./logs:/var/log/nginx

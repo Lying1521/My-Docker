@@ -1,0 +1,22 @@
+#!/bin/bash
+
+hostname=`hostname`
+RABBITMQ_NODENAME=${RABBITMQ_NODENAME:-rabbit}
+
+rabbitmq-server &
+rabbitmqctl wait /var/lib/rabbitmq/mnesia/rabbit\@$HOSTNAME.pid
+rabbitmq-plugins enable rabbitmq_management
+
+if [ ! -z "$CLUSTER_WITH" -a "$CLUSTER_WITH" != "$hostname" ]; then
+
+  rabbitmqctl stop_app
+  echo "Joining cluster $CLUSTER_WITH"
+  rabbitmqctl join_cluster ${ENABLE_RAM:+--ram} $RABBITMQ_NODENAME@$CLUSTER_WITH
+
+  rabbitmqctl start_app
+
+fi
+
+
+# Tail to keep the a foreground process active..
+tail -f /var/log/rabbitmq/rabbit\@$HOSTNAME.log
