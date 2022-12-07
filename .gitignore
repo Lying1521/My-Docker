@@ -1,5 +1,5 @@
 .idea
 *.tar.gz
 */data/
-*/logs/
-/nginx/logs/
+*/logs/*
+/nginx/logs/*
