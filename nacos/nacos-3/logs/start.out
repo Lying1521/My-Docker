@@ -1,0 +1,40 @@
+
+         ,--.
+       ,--.'|
+   ,--,:  : |                                           Nacos 2.0.0
+,`--.'`|  ' :                       ,---.               Running in cluster mode, All function modules
+|   :  :  | |                      '   ,'\   .--.--.    Port: 8848
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 32
+|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://10.11.0.103:8848/nacos/index.html
+'   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
+|   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
+'   : |  ; .' ," .--.; |'   ; :__|   :    |  `----.   \
+|   | '`--'  /  /  ,.  |'   | '.'|\   \  /  /  /`--'  /
+'   : |     ;  :   .'   \   :    : `----'  '--'.     /
+;   |.'     |  ,     .-./\   \  /            `--'---'
+'---'        `--`---'     `----'
+
+2022-12-07 11:31:47,555 INFO The server IP list of Nacos is [10.11.0.101:8848, 10.11.0.102:8848, 10.11.0.103:8848]
+
+2022-12-07 11:31:48,556 INFO Nacos is starting...
+
+2022-12-07 11:31:49,558 INFO Nacos is starting...
+
+2022-12-07 11:31:50,641 INFO Nacos is starting...
+
+2022-12-07 11:31:51,673 INFO Nacos is starting...
+
+2022-12-07 11:31:52,674 INFO Nacos is starting...
+
+2022-12-07 11:31:53,674 INFO Nacos is starting...
+
+2022-12-07 11:31:54,675 INFO Nacos is starting...
+
+2022-12-07 11:31:55,676 INFO Nacos is starting...
+
+2022-12-07 11:31:56,677 INFO Nacos is starting...
+
+2022-12-07 11:31:57,678 INFO Nacos is starting...
+
+2022-12-07 11:31:58,180 INFO Nacos started successfully in cluster mode. use external storage
+

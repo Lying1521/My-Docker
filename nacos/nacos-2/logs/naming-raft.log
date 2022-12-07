@@ -1,0 +1,136 @@
+2022-12-07 11:31:21,487 INFO raft peers changed: [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:31:21,522 INFO initializing Raft sub-system
+
+2022-12-07 11:31:21,522 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2022-12-07 11:31:21,524 INFO cache loaded, datum count: 0, current term: 0
+
+2022-12-07 11:31:21,524 INFO finish to load data from disk, cost: 2 ms.
+
+2022-12-07 11:31:21,529 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2022-12-07 11:31:22,439 INFO raft peers changed: [Member{ip='10.11.0.101', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=DOWN, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:31:22,464 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2022-12-07 11:31:23,027 INFO leader timeout, start voting,leader: null, term: 0
+
+2022-12-07 11:31:23,139 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2022-12-07 11:31:23,652 INFO received approve from peer: {"ip":"10.11.0.101:8848","voteFor":"10.11.0.101:8848","term":3,"leaderDueMs":13308,"heartbeatDueMs":2500,"state":"CANDIDATE"}
+
+2022-12-07 11:31:26,045 ERROR error while sending vote to server: 10.11.0.103:8848
+
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:194)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2022-12-07 11:31:30,001 WARN [IS LEADER] no leader is available now!
+
+2022-12-07 11:31:36,703 INFO vote 10.11.0.101:8848 as leader, term: 4
+
+2022-12-07 11:31:41,232 INFO 10.11.0.101:8848 has become the LEADER, local: {"ip":"10.11.0.102:8848","voteFor":"10.11.0.101:8848","term":4,"leaderDueMs":18494,"heartbeatDueMs":5000,"state":"FOLLOWER"}, leader: {"ip":"10.11.0.101:8848","voteFor":"10.11.0.101:8848","term":4,"leaderDueMs":18644,"heartbeatDueMs":5000,"state":"LEADER"}
+
+2022-12-07 11:32:06,519 WARN start to close old raft protocol!!!
+
+2022-12-07 11:32:06,519 WARN stop old raft protocol task for notifier
+
+2022-12-07 11:32:06,519 WARN stop old raft protocol task for master task
+
+2022-12-07 11:32:06,519 WARN stop old raft protocol task for heartbeat task
+
+2022-12-07 11:32:06,519 WARN clean old cache datum for old raft
+
+2022-12-07 11:32:06,519 WARN start to close old raft protocol!!!
+
+2022-12-07 11:32:06,519 WARN stop old raft protocol task for notifier
+
+2022-12-07 11:32:06,519 WARN stop old raft protocol task for master task
+
+2022-12-07 11:32:06,519 WARN stop old raft protocol task for heartbeat task
+
+2022-12-07 11:32:06,519 WARN clean old cache datum for old raft
+
+2022-12-07 11:32:06,519 WARN start to move old raft protocol metadata
+
+2022-12-07 11:32:06,519 WARN start to move old raft protocol metadata
+
+2022-12-07 11:39:25,926 INFO raft peers changed: [Member{ip='10.11.0.101', port=8848, state=SUSPICIOUS, extendInfo={lastRefreshTime=1670413156372, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={lastRefreshTime=1670412726519, raftMetaData=com.alibaba.nacos.consistency.ProtocolMetaData@479f6e0c, raftPort=7848, readyToUpgrade=true, version=2.0.0}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={lastRefreshTime=1670413163372, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}]
+
+2022-12-07 11:44:51,086 INFO raft peers changed: [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:44:51,120 INFO initializing Raft sub-system
+
+2022-12-07 11:44:51,121 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2022-12-07 11:44:51,122 INFO cache loaded, datum count: 0, current term: 0
+
+2022-12-07 11:44:51,122 INFO finish to load data from disk, cost: 2 ms.
+
+2022-12-07 11:44:51,126 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2022-12-07 11:44:52,048 INFO raft peers changed: [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:44:52,167 INFO Raft group naming_persistent_service has leader null
+
+2022-12-07 11:44:52,492 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2022-12-07 11:44:53,057 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2022-12-07 11:44:57,572 INFO Raft group naming_persistent_service has leader 10.11.0.101:7848
+
+2022-12-07 11:44:59,625 INFO leader timeout, start voting,leader: null, term: 0
+
+2022-12-07 11:44:59,675 INFO received approve from peer: {"ip":"10.11.0.101:8848","voteFor":"10.11.0.101:8848","term":4,"leaderDueMs":10761,"heartbeatDueMs":2500,"state":"CANDIDATE"}
+
+2022-12-07 11:45:00,001 WARN [IS LEADER] no leader is available now!
+
+2022-12-07 11:45:02,128 ERROR error while sending vote to server: 10.11.0.103:8848
+
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:194)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2022-12-07 11:45:10,186 INFO vote 10.11.0.101:8848 as leader, term: 5
+
+2022-12-07 11:45:14,724 INFO 10.11.0.101:8848 has become the LEADER, local: {"ip":"10.11.0.102:8848","voteFor":"10.11.0.101:8848","term":5,"leaderDueMs":17604,"heartbeatDueMs":5000,"state":"FOLLOWER"}, leader: {"ip":"10.11.0.101:8848","voteFor":"10.11.0.101:8848","term":5,"leaderDueMs":17198,"heartbeatDueMs":5000,"state":"LEADER"}
+
+2022-12-07 11:48:52,914 INFO received illegitimate vote, voter-term:1, votee-term:5
+
+2022-12-07 11:49:01,134 WARN start to close old raft protocol!!!
+
+2022-12-07 11:49:01,134 WARN stop old raft protocol task for notifier
+
+2022-12-07 11:49:01,134 WARN stop old raft protocol task for master task
+
+2022-12-07 11:49:01,134 WARN stop old raft protocol task for heartbeat task
+
+2022-12-07 11:49:01,134 WARN clean old cache datum for old raft
+
+2022-12-07 11:49:01,134 WARN start to close old raft protocol!!!
+
+2022-12-07 11:49:01,134 WARN stop old raft protocol task for notifier
+
+2022-12-07 11:49:01,134 WARN stop old raft protocol task for master task
+
+2022-12-07 11:49:01,134 WARN stop old raft protocol task for heartbeat task
+
+2022-12-07 11:49:01,134 WARN clean old cache datum for old raft
+
+2022-12-07 11:49:01,134 WARN start to move old raft protocol metadata
+
+2022-12-07 11:49:01,134 WARN start to move old raft protocol metadata
+
+2022-12-07 13:32:07,874 INFO raft peers changed: [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={lastRefreshTime=1670419927007, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.3}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={lastRefreshTime=1670413741134, raftMetaData=com.alibaba.nacos.consistency.ProtocolMetaData@66dd7db9, raftPort=7848, readyToUpgrade=true, version=2.0.3}}, Member{ip='10.11.0.103', port=8848, state=DOWN, extendInfo={lastRefreshTime=1670419923217, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.3}}]
+

@@ -1,0 +1,12 @@
+2022-12-07 11:31:21,227 WARN [master-db] jdbc:mysql://10.11.0.2:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2022-12-07 11:31:23,293 WARN isQuickStart:false
+
+2022-12-07 11:38:41,407 ERROR [db-error] master db 10.11.0.2 down.
+
+2022-12-07 11:38:51,412 ERROR [db-error] master db 10.11.0.2 down.
+
+2022-12-07 11:44:50,384 WARN [master-db] jdbc:mysql://10.11.0.2:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useSSL=false
+
+2022-12-07 11:44:53,183 WARN isQuickStart:false
+

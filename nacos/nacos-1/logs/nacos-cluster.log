@@ -1,0 +1,250 @@
+2022-12-07 11:30:45,129 INFO Current addressing mode selection : FileConfigMemberLookup
+
+2022-12-07 11:30:45,134 WARN [serverlist] updated to : [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.102', port=8848, state=DOWN, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=DOWN, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:30:45,139 WARN [serverlist] updated to : [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:30:46,946 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}] 
+
+2022-12-07 11:30:49,159 INFO This node is ready to provide external services
+
+2022-12-07 11:30:56,209 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:30:58,927 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:30:59,325 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:02,045 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:31:02,445 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:05,165 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:31:08,285 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:31:08,685 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:11,805 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:14,525 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:31:14,935 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:16,175 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: Connection refused;
+
+2022-12-07 11:31:20,177 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: Connection refused;
+
+2022-12-07 11:31:21,165 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:24,181 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: Connection refused;
+
+2022-12-07 11:31:24,285 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:27,405 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:30,525 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:32,745 INFO start a new rpc client to member - > : Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={lastRefreshTime=1670412692741, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}
+
+2022-12-07 11:31:36,775 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:39,885 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:43,005 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:31:46,203 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:31:50,206 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:31:54,208 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:32:05,192 INFO start a new rpc client to member - > : Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={lastRefreshTime=1670412725192, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.0}}
+
+2022-12-07 11:43:55,110 INFO Current addressing mode selection : FileConfigMemberLookup
+
+2022-12-07 11:43:55,112 WARN [serverlist] updated to : [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:43:55,119 WARN [serverlist] updated to : [Member{ip='10.11.0.101', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}, Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2022-12-07 11:43:56,909 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={raftPort=7848}}, Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={raftPort=7848}}] 
+
+2022-12-07 11:43:59,211 INFO This node is ready to provide external services
+
+2022-12-07 11:44:06,528 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:08,888 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:09,655 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:11,965 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:12,775 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:15,087 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:19,005 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:21,325 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:22,125 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:24,445 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:25,245 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:27,565 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:28,365 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:30,685 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:34,605 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:36,935 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:37,725 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:40,045 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:40,845 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:43,165 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: No route to host;
+
+2022-12-07 11:44:46,243 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: Connection refused;
+
+2022-12-07 11:44:47,085 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:50,205 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:50,245 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: Connection refused;
+
+2022-12-07 11:44:53,325 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:44:54,247 ERROR failed to report new info to target node : 10.11.0.102:8848, error : caused: Connection refused;
+
+2022-12-07 11:44:56,445 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:02,606 INFO start a new rpc client to member - > : Member{ip='10.11.0.102', port=8848, state=UP, extendInfo={lastRefreshTime=1670413502597, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.3}}
+
+2022-12-07 11:45:02,685 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:05,805 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:08,925 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:15,165 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:16,267 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:45:20,269 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:45:29,274 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Timeout connecting to [/10.11.0.103:8848];
+
+2022-12-07 11:45:33,277 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Timeout connecting to [/10.11.0.103:8848];
+
+2022-12-07 11:45:37,279 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Timeout connecting to [/10.11.0.103:8848];
+
+2022-12-07 11:45:41,281 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Timeout connecting to [/10.11.0.103:8848];
+
+2022-12-07 11:45:45,283 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Timeout connecting to [/10.11.0.103:8848];
+
+2022-12-07 11:45:45,965 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:49,085 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:55,325 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:45:58,445 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:01,565 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:04,695 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:10,925 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:14,045 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:17,165 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:23,415 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:26,524 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:29,644 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:32,774 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:39,004 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:42,124 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:45,244 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:48,364 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:54,604 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:46:57,725 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:00,845 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:07,085 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:10,205 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:13,325 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:16,445 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:22,685 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:25,815 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:28,924 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:35,165 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:38,285 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:41,405 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:44,524 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:50,764 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:53,885 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:47:57,005 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:03,244 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:06,364 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:09,484 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:12,605 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:18,845 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:21,965 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:25,085 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:31,324 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:34,444 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:37,564 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:40,684 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: No route to host;
+
+2022-12-07 11:48:44,357 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:48:48,358 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:48:52,360 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection refused;
+
+2022-12-07 11:49:01,108 INFO start a new rpc client to member - > : Member{ip='10.11.0.103', port=8848, state=UP, extendInfo={lastRefreshTime=1670413741106, raftMetaData={metaDataMap={naming_instance_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service={leader=10.11.0.101:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_persistent_service_v2={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}, naming_service_metadata={leader=10.11.0.102:7848, raftGroupMember=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848], term=1}}}, raftPort=7848, readyToUpgrade=true, version=2.0.3}}
+
+2022-12-07 13:32:05,846 ERROR failed to report new info to target node : 10.11.0.103:8848, error : caused: Connection reset by peer;
+

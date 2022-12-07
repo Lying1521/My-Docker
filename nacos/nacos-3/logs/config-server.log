@@ -1,0 +1,80 @@
+2022-12-07 11:31:47,539 INFO notifyConnectTimeout:200
+
+2022-12-07 11:31:47,544 INFO notifySocketTimeout:8000
+
+2022-12-07 11:31:47,545 INFO isHealthCheck:true
+
+2022-12-07 11:31:47,545 INFO maxHealthCheckFailCount:12
+
+2022-12-07 11:31:47,546 INFO maxContent:10485760
+
+2022-12-07 11:31:47,547 INFO spring.datasource.platform:mysql
+
+2022-12-07 11:31:55,765 WARN DumpService start
+
+2022-12-07 11:31:55,767 INFO start clear all config-info.
+
+2022-12-07 11:31:55,768 WARN clear all config-info failed.
+
+2022-12-07 11:31:55,768 WARN clear all config-info-tenant failed.
+
+2022-12-07 11:31:55,775 INFO start clear all config-info-beta.
+
+2022-12-07 11:31:55,776 WARN clear all config-info-beta failed.
+
+2022-12-07 11:31:55,776 WARN clear all config-info-beta-tenant failed.
+
+2022-12-07 11:31:55,778 INFO start clear all config-info-tag.
+
+2022-12-07 11:31:55,779 WARN clear all config-info-tag failed.
+
+2022-12-07 11:31:55,780 WARN clear all config-info-tag-tenant failed.
+
+2022-12-07 11:31:55,800 WARN initialDelay:310
+
+2022-12-07 11:45:16,491 INFO notifyConnectTimeout:200
+
+2022-12-07 11:45:16,509 INFO notifySocketTimeout:8000
+
+2022-12-07 11:45:16,509 INFO isHealthCheck:true
+
+2022-12-07 11:45:16,509 INFO maxHealthCheckFailCount:12
+
+2022-12-07 11:45:16,510 INFO maxContent:10485760
+
+2022-12-07 11:45:16,511 INFO spring.datasource.platform:mysql
+
+2022-12-07 11:48:44,391 INFO notifyConnectTimeout:200
+
+2022-12-07 11:48:44,401 INFO notifySocketTimeout:8000
+
+2022-12-07 11:48:44,401 INFO isHealthCheck:true
+
+2022-12-07 11:48:44,402 INFO maxHealthCheckFailCount:12
+
+2022-12-07 11:48:44,402 INFO maxContent:10485760
+
+2022-12-07 11:48:44,403 INFO spring.datasource.platform:mysql
+
+2022-12-07 11:48:51,706 WARN DumpService start
+
+2022-12-07 11:48:51,708 INFO start clear all config-info.
+
+2022-12-07 11:48:51,709 WARN clear all config-info failed.
+
+2022-12-07 11:48:51,710 WARN clear all config-info-tenant failed.
+
+2022-12-07 11:48:51,715 INFO start clear all config-info-beta.
+
+2022-12-07 11:48:51,716 WARN clear all config-info-beta failed.
+
+2022-12-07 11:48:51,716 WARN clear all config-info-beta-tenant failed.
+
+2022-12-07 11:48:51,718 INFO start clear all config-info-tag.
+
+2022-12-07 11:48:51,718 WARN clear all config-info-tag failed.
+
+2022-12-07 11:48:51,719 WARN clear all config-info-tag-tenant failed.
+
+2022-12-07 11:48:51,738 WARN initialDelay:257
+

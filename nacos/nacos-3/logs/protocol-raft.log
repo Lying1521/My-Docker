@@ -1,0 +1,56 @@
+2022-12-07 11:31:54,046 INFO Initializes the Raft protocol, raft-config info : {}
+
+2022-12-07 11:31:54,227 INFO ========= The raft protocol is starting... =========
+
+2022-12-07 11:31:54,556 INFO ========= The raft protocol start finished... =========
+
+2022-12-07 11:31:54,563 INFO create raft group : naming_persistent_service
+
+2022-12-07 11:31:55,915 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service', leader='10.11.0.102:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:31:56,275 INFO create raft group : naming_persistent_service_v2
+
+2022-12-07 11:31:56,420 INFO create raft group : naming_instance_metadata
+
+2022-12-07 11:31:56,548 INFO create raft group : naming_service_metadata
+
+2022-12-07 11:31:56,660 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='10.11.0.101:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:31:56,712 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='10.11.0.101:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:31:56,964 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='10.11.0.102:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:39:26,962 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='10.11.0.103:7848', term=2, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:39:27,763 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='10.11.0.102:7848', term=2, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:39:27,834 ERROR Fail to refresh route configuration for group : naming_persistent_service_v2, status is : Status[UNKNOWN<-1>: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 4999205009ns. [buffered_nanos=4999298792, waiting_for_connection]]
+
+2022-12-07 11:48:49,967 INFO Initializes the Raft protocol, raft-config info : {}
+
+2022-12-07 11:48:50,189 INFO ========= The raft protocol is starting... =========
+
+2022-12-07 11:48:50,573 INFO ========= The raft protocol start finished... =========
+
+2022-12-07 11:48:50,582 INFO create raft group : naming_persistent_service
+
+2022-12-07 11:48:51,386 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service', leader='10.11.0.101:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:48:52,223 INFO create raft group : naming_persistent_service_v2
+
+2022-12-07 11:48:52,355 INFO create raft group : naming_instance_metadata
+
+2022-12-07 11:48:52,466 INFO create raft group : naming_service_metadata
+
+2022-12-07 11:48:52,665 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='10.11.0.102:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:48:52,853 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='10.11.0.102:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 11:48:53,359 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='10.11.0.102:7848', term=1, raftClusterInfo=[10.11.0.102:7848, 10.11.0.103:7848, 10.11.0.101:7848]}
+
+2022-12-07 13:32:04,324 INFO shutdown jraft server
+
+2022-12-07 13:32:04,327 INFO ========= The raft protocol is starting to close =========
+
+2022-12-07 13:32:04,600 INFO ========= The raft protocol has been closed =========
+

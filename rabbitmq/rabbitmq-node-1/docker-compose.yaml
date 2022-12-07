@@ -1,0 +1,35 @@
+version: '3.2'
+
+services:
+  rabbitmq-01:
+    image: rabbitmq-cluster:3.9.18-debian-10-r0
+    hostname: rabbitmq01
+    container_name: rabbitmq-node-1
+    tty: true
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "25672:25672"
+    volumes:
+      - "./data/rabbitmq:/var/lib/rabbitmq/mnesia"
+      - "./logs/rabbitmq:/var/log/rabbitmq"
+      - type: bind
+        source: ../init.d/custom.conf
+        target: /bitnami/rabbitmq/conf/custom.conf
+    environment:
+      - TZ=AsiaShanghai
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+      - RABBITMQ_LOGS=
+      - RABBITMQ_LOG_BASE=/var/log/rabbitmq
+    privileged: true
+    extra_hosts:
+      - "rabbitmq02:10.10.0.102"
+      - "rabbitmq03:10.10.0.103"
+    networks:
+      rabbitmq:
+        ipv4_address: 10.10.0.101
+
+networks:
+   rabbitmq:
+    external: true

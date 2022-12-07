@@ -1,0 +1,7 @@
+1.debian ubuntu 修改apt-get清华源
+RUN sed -i -r 's#http://(archive|security).ubuntu.com#https://mirrors.aliyun.com#g' /etc/apt/sources.list && apt-get update
+2.command 'gcc' failed with exit status 1
+通常未安装python开发环境导致
+python2 apt-get install python-dev
+python3 apt-get install python3-dev
+libevent apt-get install libevent-dev
