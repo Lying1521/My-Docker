@@ -1,3 +1,7 @@
 .idea
 *.tar.gz
 /nginx/logs/
+/minio/minio-1/minio-persistence/
+/minio/minio-2/minio-persistence/
+/minio/minio-3/minio-persistence/
+/minio/minio-4/minio-persistence/
