@@ -26,10 +26,11 @@ services:
     extra_hosts:
       - "rabbitmq02:10.10.0.102"
       - "rabbitmq03:10.10.0.103"
-    networks:
-      rabbitmq:
-        ipv4_address: 10.10.0.101
-
-networks:
-   rabbitmq:
-    external: true
+#    #单机测试时使用
+#    networks:
+#      rabbitmq:
+#        ipv4_address: 10.10.0.101
+#
+#networks:
+#   rabbitmq:
+#    external: true

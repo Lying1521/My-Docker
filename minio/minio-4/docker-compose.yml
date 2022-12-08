@@ -5,8 +5,8 @@ services:
     hostname: minio04
     container_name: minio-node-4
     ports:
-      - "8304:9000"
-      - "8404:9001"
+      - "9000:9000"
+      - "9001:9001"
     volumes:
       - './minio-persistence/data-1:/data-1'
       - './minio-persistence/data-2:/data-2'
@@ -25,10 +25,11 @@ services:
       - "minio02:10.12.0.102"
       - "minio03:10.12.0.103"
       - "minio04:10.12.0.104"
-    networks:
-      minio:
-        ipv4_address: 10.12.0.104
-
-networks:
-   minio:
-    external: true
+#    #单机测试时使用
+#    networks:
+#      minio:
+#        ipv4_address: 10.12.0.104
+#
+#networks:
+#   minio:
+#    external: true

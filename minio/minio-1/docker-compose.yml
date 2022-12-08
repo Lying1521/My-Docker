@@ -5,13 +5,13 @@ services:
     hostname: minio01
     container_name: minio-node-1
     ports:
-      - "8301:9000"
-      - "8401:9001"
+      - "9000:9000"
+      - "9001:9001"
     volumes:
-      - './minio-persistence/data-1:/data-1:rw'
-      - './minio-persistence/data-2:/data-2:rw'
-      - './minio-persistence/data-3:/data-3:rw'
-      - './minio-persistence/data-4:/data-4:rw'
+      - './minio-persistence/data-1:/data-1'
+      - './minio-persistence/data-2:/data-2'
+      - './minio-persistence/data-3:/data-3'
+      - './minio-persistence/data-4:/data-4'
     environment:
       - MINIO_ROOT_USER=minio
       - MINIO_ROOT_PASSWORD=abc123456
@@ -26,10 +26,11 @@ services:
       - "minio02:10.12.0.102"
       - "minio03:10.12.0.103"
       - "minio04:10.12.0.104"
-    networks:
-      minio:
-        ipv4_address: 10.12.0.101
-
-networks:
-   minio:
-    external: true
+#    #单机测试时使用
+#    networks:
+#      minio:
+#        ipv4_address: 10.12.0.101
+#
+#networks:
+#   minio:
+#    external: true

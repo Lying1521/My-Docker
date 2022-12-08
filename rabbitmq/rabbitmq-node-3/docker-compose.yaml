@@ -7,9 +7,9 @@ services:
     container_name: rabbitmq-node-3
     tty: true
     ports:
-      - "5674:5672"
-      - "15674:15672"
-      - "25674:25672"
+      - "5672:5672"
+      - "15672:15672"
+      - "25672:25672"
     volumes:
       - "./data/rabbitmq:/var/lib/rabbitmq/mnesia"
       - "./logs/rabbitmq:/var/log/rabbitmq"
@@ -28,10 +28,11 @@ services:
     extra_hosts:
       - "rabbitmq01:10.10.0.101"
       - "rabbitmq02:10.10.0.102"
-    networks:
-      rabbitmq:
-        ipv4_address: 10.10.0.103
-
-networks:
-   rabbitmq:
-    external: true
+#    #单机测试时使用
+#    networks:
+#      rabbitmq:
+#        ipv4_address: 10.10.0.103
+#
+#networks:
+#   rabbitmq:
+#    external: true

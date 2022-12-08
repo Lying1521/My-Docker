@@ -5,8 +5,8 @@ services:
     image: nacos/nacos-server:2.0.3
     container_name: nacos-server-node-01
     ports:
-      - "18848:8848"
-      - "19555:9555"
+      - "8848:8848"
+      - "9555:9555"
     restart: on-failure
     privileged: true
     environment:
@@ -36,10 +36,11 @@ services:
 #      - type: bind
 #        source: ../init.d/custom.properties #../init.d/custom.properties内包含很多自定义配置，可按需配置
 #        target: /home/nacos/init.d/custom.properties
-    networks:
-      nacos:
-        ipv4_address: 10.11.0.101
-
-networks:
-   nacos:
-    external: true
+#    #单机测试时使用
+#    networks:
+#      nacos:
+#        ipv4_address: 10.11.0.101
+#
+#networks:
+#   nacos:
+#    external: true
