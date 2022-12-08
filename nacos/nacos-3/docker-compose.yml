@@ -1,9 +1,9 @@
 ﻿version: '3.2'
 services:
   # nacos-server服务注册与发现，配置中心服务
-  nacos-server-3:
+  nacos-server-03:
     image: nacos/nacos-server:2.0.3
-    container_name: nacos-server-3
+    container_name: nacos-server-node-03
     ports:
       - "38848:8848"
       - "39555:9555"
@@ -24,8 +24,8 @@ services:
       - MYSQL_DATABASE_NUM=1 #default:1
 #      - MYSQL_SERVICE_DB_PARAM #default characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useSSL=false
 #      JVM调优参数
-#      - JVM_XMS= #-Xms default :1g
-#      - JVM_XMX= #-Xmx default :1g
+      - JVM_XMS=512m #-Xms default :1g
+      - JVM_XMX=512m #-Xmx default :1g
 #      - JVM_XMN= #-Xmn default :512m
 #      - JVM_MS=  #-XX:MetaspaceSize default :128m
 #      - JVM_MMS= #-XX:MaxMetaspaceSize default :320m

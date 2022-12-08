@@ -1,9 +1,9 @@
 ﻿version: '3.2'
 services:
   # nacos-server服务注册与发现，配置中心服务	
-  nacos-server-2:
+  nacos-server-02:
     image: nacos/nacos-server:2.0.3
-    container_name: nacos-server-2
+    container_name: nacos-server-node-2
     ports:
       - "28848:8848"
       - "29555:9555"

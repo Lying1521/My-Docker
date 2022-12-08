@@ -1,0 +1,34 @@
+version: '3.2'
+services:
+  minio-03:
+    image: 'bitnami/minio:2022.12.7-debian-11-r0'
+    hostname: minio03
+    container_name: minio-node-3
+    ports:
+      - "8303:9000"
+      - "8403:9001"
+    volumes:
+      - './minio-persistence/data-1:/data-1'
+      - './minio-persistence/data-2:/data-2'
+      - './minio-persistence/data-3:/data-3'
+      - './minio-persistence/data-4:/data-4'
+    environment:
+      - MINIO_ROOT_USER=minio
+      - MINIO_ROOT_PASSWORD=abc123456
+      - MINIO_DISTRIBUTED_MODE_ENABLED=yes
+      - MINIO_DISTRIBUTED_NODES=minio0{1...4}/data-{1...4}
+      - MINIO_SKIP_CLIENT=yes
+#      - MINIO_HTTP_TRACE=/opt/bitnami/minio/log/minio.log
+#      - MINIO_DEFAULT_BUCKETS=my-first-bucket:policy,my-second-bucket
+    extra_hosts:
+      - "minio01:10.12.0.101"
+      - "minio02:10.12.0.102"
+      - "minio03:10.12.0.103"
+      - "minio04:10.12.0.104"
+    networks:
+      minio:
+        ipv4_address: 10.12.0.103
+
+networks:
+   minio:
+    external: true
